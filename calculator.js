@@ -9,8 +9,8 @@ function calculateSquareRoot(value) {
 // TODO: Implement square function
 function calculateSquare(value) {
     // Hint: Use exponentiation
-    // return the square root of the value
-
+    // return the root of the value
+    return Math.pow(value, 2);
 }
 
 // TODO: FIX reciprocal function
