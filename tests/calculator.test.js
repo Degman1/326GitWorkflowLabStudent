@@ -3,7 +3,7 @@ const calculator = require('../calculator');
 
 // Test memory functions
 describe('Calculator Memory Functions', function() {
-    
+
 });
 
 
@@ -13,6 +13,13 @@ describe('Calculator Calculation Functions', function() {
     it('should return 2', function() {
         assert.strictEqual(res, 2);
     });
+});
+
+describe("Cosine Function", function () {
+  const res = calculator.cosine(Math.PI / 3);
+  it("should return 0.5", function () {
+    assert.strictEqual(res, 0.5);
+  });
 });
 
 
