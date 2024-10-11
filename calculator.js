@@ -14,7 +14,7 @@ function calculateSquare(value) {
 }
 
 // TODO: FIX reciprocal function
-function calculateReciprocal() {
+function calculateReciprocal(value) {
     return 1/value;
 
 }
