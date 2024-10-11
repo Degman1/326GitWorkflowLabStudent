@@ -32,7 +32,7 @@ function calculateResult() {
 function runSquareRoot() {
     const v = calculateSquareRoot(display.value);
     display.value = v;
-    
+
 }
 
 function runSquare() {
@@ -48,5 +48,3 @@ function runReciprocal() {
 }
 
 // TODO: Implement run your functions here
-
-

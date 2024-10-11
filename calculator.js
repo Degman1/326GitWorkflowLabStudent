@@ -2,7 +2,7 @@
 
 // TODO: Fix the square root function not displaying
 function calculateSquareRoot(value) {
-    
+
     // return the square root of the value
 }
 
@@ -14,10 +14,9 @@ function calculateSquare(value) {
 }
 
 // TODO: FIX reciprocal function
-function calculateReciprocal() {
-    // Hint: Reciprocal is 1/x
-    // return the square root of the value
-    return 1* value;
+function calculateReciprocal(value) {
+    return (1 / Number(value))
+
 
 }
 
