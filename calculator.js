@@ -11,6 +11,8 @@ function calculateSquare(value) {
     // Hint: Use exponentiation
     // return the square root of the value
 
+    return value * value;
+
 }
 
 // TODO: FIX reciprocal function
