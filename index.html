@@ -13,7 +13,7 @@
             width: 280px;
             margin: 0 auto;
             padding: 20px;
-            border: 2px solid #000;
+            border: 2px solid #303136;
             border-radius: 1rem;
             background-color: black;
         }
@@ -21,9 +21,13 @@
             width: 60px;
             height: 40px;
             font-size: 18px;
-            background-color: gray;
+            background-color: #616161;
             border: none;
-            border-radius: 0.8rem;
+            border-radius: 1rem;
+            margin: 0.4rem;
+        }
+        .num{
+            font-size: 30px;
         }
         input {
             width: 280px;
@@ -36,10 +40,30 @@
             height: 30px;
         }
         .blue-text{
-            color: rgb(99, 188, 244);
+            color: #24A5FF;
         }
         .blue-button{
-
+            background-color: #005DB2;
+        }
+        .equal-button{
+            background-color: #1991FF;
+            color: #B2DAFF;
+        }
+        .clear-del-btn{
+            background-color: #616161;
+            color: #A5A5A5;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        .container-start{
+            display: flex;
+            justify-content: start;
+        }
+        .zero-btn{
+            
+            width: 125px;
         }
     </style>
 </head>
@@ -49,45 +73,47 @@
 <div id="calculator">
      <!-- Memory display -->
     <input style="margin-top: 3rem;" type="text" id="memoryDisplay" placeholder="Memory: 0" disabled><br><br>
-    <input style="margin-bottom: 5rem;" type="text" id="display" disabled><br><br>
+    <input style="margin-bottom: 3rem;" type="text" id="display" disabled><br><br>
 
     <!-- Memory buttons -->
-     <div>
+     <div class="container">
         <button onclick="memoryStore()" class="thin-button blue-text">Store</button>
         <button onclick="memoryRecall()" class="thin-button blue-text">Recall</button>
         <button onclick="memoryClear()" class="thin-button blue-text">Reset</button>
     
-        <button style="background-color: white" onclick="runSquareRoot()" class="thin-button blue-text"> sqrt()</button><br/><br/>
+        <button style="background-color: white" onclick="runSquareRoot()" class="thin-button blue-text"> sqrt()</button>
     </div>
     <!-- Calculator buttons -->
-    <div>
-        <button onclick="clearDisplay()">C</button>
-        <button onclick="deleteLast()">Del</button>
-        <button onclick="appendToDisplay('/')">/</button>
-        <button onclick="appendToDisplay('*')">*</button><br><br>
+    <div class="container">
+        <button onclick="clearDisplay()" class="clear-del-btn">C</button>
+        <button onclick="deleteLast()" class="clear-del-btn">Del</button>
+        <button class="blue-button blue-text" onclick="appendToDisplay('/')">/</button>
+        <button class="blue-button blue-text" onclick="appendToDisplay('*')">*</button>
      </div>
         <!-- Add your features here -->
 
-
-    
-    <button class="blue-text" onclick="appendToDisplay('7')">7</button>
-    <button class="blue-text" onclick="appendToDisplay('8')">8</button>
-    <button class="blue-text" onclick="appendToDisplay('9')">9</button>
-    <button onclick="appendToDisplay('-')">-</button><br><br>
-    
-    <button class="blue-text" onclick="appendToDisplay('4')">4</button>
-    <button class="blue-text" onclick="appendToDisplay('5')">5</button>
-    <button class="blue-text" onclick="appendToDisplay('6')">6</button>
-    <button onclick="appendToDisplay('+')">+</button><br><br>
-    
-    <button class="blue-text" onclick="appendToDisplay('1')">1</button>
-    <button class="blue-text" onclick="appendToDisplay('2')">2</button>
-    <button class="blue-text" onclick="appendToDisplay('3')">3</button>
-    <button onclick="calculateResult()">=</button><br><br>
-
-    <button class="blue-text" onclick="appendToDisplay('0')">0</button>
-    <button class="blue-text" onclick="appendToDisplay('.')">.</button>
-
+    <div class="container">
+        <button class="blue-text num" onclick="appendToDisplay('7')">7</button>
+        <button class="blue-text num" onclick="appendToDisplay('8')">8</button>
+        <button class="blue-text num" onclick="appendToDisplay('9')">9</button>
+        <button class="blue-button blue-text" onclick="appendToDisplay('-')">-</button>
+    </div>
+    <div class="container">
+        <button class="blue-text num" onclick="appendToDisplay('4')">4</button>
+        <button class="blue-text num" onclick="appendToDisplay('5')">5</button>
+        <button class="blue-text num" onclick="appendToDisplay('6')">6</button>
+        <button class="blue-button blue-text" onclick="appendToDisplay('+')">+</button>
+    </div>
+    <div class="container">
+        <button class="blue-text num" onclick="appendToDisplay('1')">1</button>
+        <button class="blue-text num" onclick="appendToDisplay('2')">2</button>
+        <button class="blue-text num" onclick="appendToDisplay('3')">3</button>
+        <button class="equal-button" onclick="calculateResult()">=</button>
+    </div>
+    <div class="container-start">
+        <button class="blue-text num zero-btn" onclick="appendToDisplay('0')">0</button>
+        <button class="blue-text" onclick="appendToDisplay('.')">.</button>
+    </div>
      <!-- TODO: Add extra function operations -->
 </div>
 
