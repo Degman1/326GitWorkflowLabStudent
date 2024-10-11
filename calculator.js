@@ -35,6 +35,9 @@ function sine(value) {
 // TODO: Implement cosine function
 function cosine(value) {
     // return the cosine of the value
+    const radian = degree * Math.PI / 180;
+    const cosine = Math.cos(radian);
+    return cosine;
 }
 
 // TODO: Implement tangent function
