@@ -17,3 +17,9 @@ describe('Calculator Calculation Functions', function() {
 
 
 // Add your tests here
+describe('Calculator Calculation Functions', function() {
+    const res = calculator.calculateSquareRoot(9);
+    it('should return 3', function() {
+        assert.strictEqual(res, 3);
+    });
+});
