@@ -11,7 +11,7 @@ function calculateSquareRoot(value) {
 function calculateSquare(value) {
     // Hint: Use exponentiation
     // return the root of the value
-    return value * value;
+    return Math.pow(value, 2);
 }
 
 // TODO: FIX reciprocal function
