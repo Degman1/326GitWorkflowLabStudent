@@ -33,7 +33,8 @@ function sine(value) {
 
 // TODO: Implement cosine function
 function cosine(value) {
-    // return the cosine of the value
+    let radians = angleInDegrees * (Math.PI / 180);
+    return Math.cos(radians);
 }
 
 // TODO: Implement tangent function
