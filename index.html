@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Calculator</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        #calculator {
-            width: 400px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 2px solid #000;
-        }
-        button {
-            width: 60px;
-            height: 40px;
-            font-size: 18px;
-        }
-        input {
-            width: 360px;
-            height: 40px;
-            text-align: right;
-            font-size: 18px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    #calculator {
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 2px solid #000;
+      border-radius: 1rem;
+    }
+
+    button {
+      width: 60px;
+      height: 40px;
+      font-size: 18px;
+      appearance: none;
+      background: black;
+      color: white;
+      border: 0px;
+      border-radius: 0.5rem;
+
+    }
+
+    input {
+      width: 360px;
+      height: 40px;
+      text-align: right;
+      font-size: 18px;
+    }
+  </style>
 </head>
+
 <body>
 
-<h1>Simple JS Calculator</h1>
-<div id="calculator">
+  <h1>Simple JS Calculator</h1>
+  <div id="calculator">
     <input type="text" id="display" disabled><br><br>
     <!-- Memory display -->
     <input type="text" id="memoryDisplay" placeholder="Memory: 0" disabled><br><br>
@@ -47,20 +59,20 @@
     <button onclick="deleteLast()">Del</button>
     <button onclick="appendToDisplay('/')">/</button>
     <button onclick="appendToDisplay('*')">*</button><br><br>
-        <!-- Add your features here -->
+    <!-- Add your features here -->
 
 
-    
+
     <button onclick="appendToDisplay('7')">7</button>
     <button onclick="appendToDisplay('8')">8</button>
     <button onclick="appendToDisplay('9')">9</button>
     <button onclick="appendToDisplay('-')">-</button><br><br>
-    
+
     <button onclick="appendToDisplay('4')">4</button>
     <button onclick="appendToDisplay('5')">5</button>
     <button onclick="appendToDisplay('6')">6</button>
     <button onclick="appendToDisplay('+')">+</button><br><br>
-    
+
     <button onclick="appendToDisplay('1')">1</button>
     <button onclick="appendToDisplay('2')">2</button>
     <button onclick="appendToDisplay('3')">3</button>
@@ -69,11 +81,11 @@
     <button onclick="appendToDisplay('0')">0</button>
     <button onclick="appendToDisplay('.')">.</button>
 
-     <!-- TODO: Add extra function operations -->
-</div>
+    <!-- TODO: Add extra function operations -->
+  </div>
 
-<script src="calculator.js"></script>
-<script src="scripts.js"></script>
+  <script src="calculator.js"></script>
+  <script src="scripts.js"></script>
 </body>
 
 </html>
