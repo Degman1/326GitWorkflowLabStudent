@@ -2,7 +2,7 @@
 
 // TODO: Fix the square root function not displaying
 function calculateSquareRoot(value) {
-    
+
     return Math.sqrt(value);
 }
 
@@ -41,6 +41,7 @@ function cosine(value) {
 // TODO: Implement tangent function
 function tangent(value) {
     // return the tangent of the value
+    return Math.tan(value);
 }
 
 
