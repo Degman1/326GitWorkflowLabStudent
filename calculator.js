@@ -3,7 +3,7 @@
 // TODO: Fix the square root function not displaying
 function calculateSquareRoot(value) {
 
-    // return the square root of the value
+    return Math.sqrt(value);
 }
 
 // TODO: Implement square function
@@ -24,11 +24,13 @@ function calculateReciprocal() {
 // TODO: Implement natural log function
 function naturalLog(value) {
     // return the natural log of the value
+    return Math.log(value);
 }
 
 // TODO: Implement sine function
 function sine(value) {
     // return the sine of the value
+    return Math.sin(value)
 }
 
 // TODO: Implement cosine function
