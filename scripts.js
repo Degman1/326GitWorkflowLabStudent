@@ -49,4 +49,20 @@ function runReciprocal() {
 
 // TODO: Implement run your functions here
 
-
+document.addEventListener('keydown', (event) => {
+    switch(event.key) {
+        case '0':
+        case '1':
+        case '2':
+        case '3':
+        case '4':
+        case '5':
+        case '6':
+        case '7':
+        case '8':
+        case '9':
+            appendToDisplay(event.key);
+            break;
+    }
+        
+});
