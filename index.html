@@ -48,7 +48,12 @@
     <button onclick="appendToDisplay('/')">/</button>
     <button onclick="appendToDisplay('*')">*</button><br><br>
         <!-- Add your features here -->
-
+    <!--add missing buttons-->
+    <button onclick="appendToDisplay('sqr '); runSquare()">Sqr</button>
+    <button onclick="appendToDisplay('1/'); runReciprocal()">1/x</button>
+    <button onclick="appendToDisplay('sin ') ">sin</button>
+    <button onclick="appendToDisplay('cos ')">cos</button>
+    <button onclick="appendToDisplay('tan ')">tan</button><br><br>
 
     
     <button onclick="appendToDisplay('7')">7</button>
@@ -70,6 +75,16 @@
     <button onclick="appendToDisplay('.')">.</button>
 
      <!-- TODO: Add extra function operations -->
+     <script>
+        document.onkeydown = function(event){
+            let key = event.key;
+            let display = document.getElementById('display');
+            if(Number(key)){
+                appendToDisplay(key);
+            }
+        }
+      </script>
+      
 </div>
 
 <script src="calculator.js"></script>
