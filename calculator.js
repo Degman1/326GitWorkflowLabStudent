@@ -4,6 +4,7 @@
 function calculateSquareRoot(value) {
     
     // return the square root of the value
+    return Math.sqrt(value);
 }
 
 // TODO: Implement square function
@@ -14,11 +15,12 @@ function calculateSquare(value) {
 }
 
 // TODO: FIX reciprocal function
-function calculateReciprocal() {
-    // Hint: Reciprocal is 1/x
-    // return the square root of the value
-    return 1* value;
-
+function calculateReciprocal(value) {
+    if(number === 0){
+        return undefined;
+    }else{
+        return 1/value;
+    };
 }
 
 // TODO: Implement natural log function
