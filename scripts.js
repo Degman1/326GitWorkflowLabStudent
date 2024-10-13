@@ -48,6 +48,18 @@ function runReciprocal() {
 }
 
 // TODO: Implement run your functions here
+function runSine() {
+    const v = sine(display.value);
+    display.value = v;
+}
+function runCosine() {
+    const v = cosine(display.value);
+    display.value = v;
+}
+function runTangent() {
+    const v = tangent(display.value);
+    display.value = v;
+}
 
  // Add keyboard support for number input
 document.addEventListener("keydown", function(e){
