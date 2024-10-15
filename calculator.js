@@ -3,14 +3,14 @@
 // TODO: Fix the square root function not displaying
 function calculateSquareRoot(value) {
     // return the square root of the value
-    return Math.sqrt(value);
+    return Math.sqrt(value); //uses Math.sqrt to calculate square root
 }
 
 // TODO: Implement square function
 function calculateSquare(value) {
     // Hint: Use exponentiation
     // return the square root of the value
-    return Math.pow(value, 2);
+    return Math.pow(value, 2); //uses Math.pow to calculate square
 }
 
 // TODO: FIX reciprocal function
