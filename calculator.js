@@ -11,14 +11,15 @@ function calculateSquare(value) {
     // Hint: Use exponentiation
     // return the square root of the value
 
+    return value * value;
+
 }
 
 // TODO: FIX reciprocal function
 function calculateReciprocal() {
     // Hint: Reciprocal is 1/x
     // return the square root of the value
-    return 1* value;
-
+    return 1 / value;
 }
 
 // TODO: Implement natural log function
@@ -29,16 +30,19 @@ function naturalLog(value) {
 // TODO: Implement sine function
 function sine(value) {
     // return the sine of the value
+    return Math.sin(value)
 }
 
 // TODO: Implement cosine function
 function cosine(value) {
     // return the cosine of the value
+    return Math.cos(value)
 }
 
 // TODO: Implement tangent function
 function tangent(value) {
     // return the tangent of the value
+    return Math.tan(value)
 }
 
 
@@ -47,5 +51,8 @@ function tangent(value) {
 module.exports = {
     calculateSquareRoot,
     calculateSquare,
-    calculateReciprocal
+    calculateReciprocal,
+    sine,
+    cosine,
+    tangent
 };
