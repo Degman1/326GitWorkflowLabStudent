@@ -4,6 +4,8 @@
 function calculateSquareRoot(value) {
     
     // return the square root of the value
+    const a = 1;
+    return Math.sqrt(value);
 }
 
 // TODO: Implement square function
