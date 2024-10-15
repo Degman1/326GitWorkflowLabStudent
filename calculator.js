@@ -1,5 +1,3 @@
-
-
 // TODO: Fix the square root function not displaying
 function calculateSquareRoot(value) {
     
