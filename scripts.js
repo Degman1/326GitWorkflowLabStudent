@@ -60,6 +60,10 @@ function runTangent() {
     const v = tangent(display.value);
     display.value = v;
 }
+function runNaturalLog() { 
+    const v = naturalLog(display.value)
+    display.value = v; 
+}
 
  // Add keyboard support for number input
 document.addEventListener("keydown", function(e){
