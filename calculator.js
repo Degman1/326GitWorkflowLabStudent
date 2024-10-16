@@ -2,15 +2,15 @@
 
 // TODO: Fix the square root function not displaying
 function calculateSquareRoot(value) {
-    
-    // return the square root of the value
+    if (value < 0) {
+        return "Error";
+    }
+    return Math.sqrt(value);
 }
 
 // TODO: Implement square function
 function calculateSquare(value) {
-    // Hint: Use exponentiation
-    // return the square root of the value
-
+    return Math.pow(value,2);
 }
 
 // TODO: FIX reciprocal function
