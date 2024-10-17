@@ -48,5 +48,43 @@ function runReciprocal() {
 }
 
 // TODO: Implement run your functions here
+function runSine() {
+    const v = sine(display.value);
+    display.value = v;
+}
+function runCosine() {
+    const v = cosine(display.value);
+    display.value = v;
+}
+function runTangent() {
+    const v = tangent(display.value);
+    display.value = v;
+}
+function runNaturalLog() { 
+    const v = naturalLog(display.value)
+    display.value = v; 
+}
 
+ // Add keyboard support for number input
+document.addEventListener("keydown", function(e){
+    // number validation
+    const numKey = ['0','1','2','3','4','5','6','7','8','9'];
+        // if needed ['/', '*', '-', '+', '.', 'Delete', 'Backspace','Enter']
+    if(numKey.includes(e.key)){
+        e.preventDefault();
+        appendToDisplay(e.key);
+    }
+    
 
+    // if (numKey.includes(e.key)) {
+    //     e.preventDefault();
+
+    //     if (e.key === 'Enter') {
+    //         calculateResult();
+    //     } else if (e.key === 'Backspace' || e.key === 'Delete') {
+    //         deleteLast();
+    //     } else {
+    //         appendToDisplay(e.key);
+    //     }
+    // } // end-if
+});
